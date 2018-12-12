@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+  <section>
+    <mediaobject>
+      <imageobject>
+        <imagedata>
+          <svg:svg height="480.00000000000006" width="640">
+            <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+            <svg:g>
+              <svg:title>Layer 1</svg:title>
+
+              <svg:text fill="#000000" font-family="Unlock" font-size="60"
+                        id="svg_5" stroke="#000000" stroke-dasharray="null"
+                        stroke-linecap="null" stroke-linejoin="null"
+                        stroke-width="0" text-anchor="middle" x="200"
+                        y="54.785156" xml:space="preserve">WE</svg:text>
+
+              <svg:text fill="#000000" font-family="Unlock" font-size="60"
+                        id="svg_1" stroke="#f52718" stroke-dasharray="null"
+                        stroke-linecap="null" stroke-linejoin="null"
+                        stroke-width="0" text-anchor="middle" x="200"
+                        y="108.875977" xml:space="preserve">L  VE</svg:text>
+
+              <svg:text fill="#000000" font-family="Unlock" font-size="60"
+                        id="svg_2" stroke="#f52718" stroke-dasharray="null"
+                        stroke-linecap="null" stroke-linejoin="null"
+                        stroke-width="0" text-anchor="middle" x="200"
+                        y="163.242188" xml:space="preserve">CHESS</svg:text>
+
+              <svg:path d="m175.767666,77.94873c8.240267,-23.640112 40.525905,0 0,30.394429c-40.525905,-30.394429 -8.240267,-54.03454 0,-30.394429z"
+                        fill="#f52718" id="svg_3" stroke-dasharray="null"
+                        stroke-linecap="null" stroke-linejoin="null"/>
+            </svg:g>
+          </svg:svg>
+        </imagedata>
+      </imageobject>
+    </mediaobject>
+  </section>
+</article>
