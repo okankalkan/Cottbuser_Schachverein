@@ -19,6 +19,12 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
+  
+.logo {
+    margin-left: 1em;
+    grid-column: 2 / 2;
+    max-height: 75px;
+}
 
 .content {
   padding: 1em;
@@ -158,6 +164,7 @@ nav a:hover {
   .logo {
     margin-left: 1em;
     grid-column: 2 / 2;
+    max-height: 75px;
   }
   
   nav {
