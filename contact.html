@@ -38,7 +38,23 @@
 			<h2>Contact Us</h2>
 			<p>You can contact us using the following feedback form or by the information below.</p>
 			<!-- form for feedback -->
-			
+			<div class="textform">
+  				<form>
+			    <label for="fname">First Name</label>
+    			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+    			<label for="lname">Last Name</label>
+			    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			    <label for="status">Your Status</label>
+			    <select id="status" name="status">
+			    	<option value="student">student</option>
+					<option value="mitarbeiter">mitarbeiter</option>
+					<option value="arbeiter">arbeiter</option>
+    			</select>
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+			</div> 
 
 		</main>
 
