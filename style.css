@@ -237,6 +237,11 @@ footer {
   padding: 0.5em;
 }
 
+.member{
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
 .menu {
   grid-area: menu;
   display: grid;
@@ -275,12 +280,16 @@ footer {
     grid-template-areas: 
       "menu contacts socialmedia"
   }
+  .member{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  }
 }
 /*Footer defining END*/
 
 .head {
   font-size: 1em;
-  height: 200px;
+  height: 150px;
   background: url(images/head.jpeg) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -302,6 +311,20 @@ footer {
   margin: auto;
   max-width: 1024px;
   text-align: right;
+}
+
+.breadcrumb {
+	text-decoration-line: overline;
+	text-decoration-style: double;
+}
+
+.membername {
+  margin: auto;
+}
+
+.memberimage {
+  width: 50%;
+  margin: auto auto 1em auto;
 }
 
 
