@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -56,7 +57,12 @@
     			</select>
 				<label for="subject">Subject</label>
 				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-				<input type="submit" value="Submit">
+				<button type="button" onclick="JSalert()">Submit</button> 
+				<script type="text/javascript">
+					function JSalert(){
+						swal("Done!", "Your message has been sent!", "success");					
+					}
+				</script>
 			</form>
 			</div> 
 
