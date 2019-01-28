@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT calender (event+) EMPTY>
-<!ELEMENT event (title, description, date) EMPTY>
-<!ATTLIST event type (event|match) #REQUIRED
-                status (upcoming|current|past) #REQUIRED>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT description (#PCDATA)>
-<!ELEMENT date (#PCDATA)>
