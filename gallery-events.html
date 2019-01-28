@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" id="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Cottbuser Schachfreunde e.V - Our Events</title>
@@ -39,6 +39,24 @@
 			<div class="breadcrumb">
          <a href="index.html">Home</a> -> <a href="gallery.html">Gallery</a> -> <a href="gallery-events.html">Our Events</a>
       </div>
+
+      	<div class="buttons">
+      		<button type="button" id="cssmono">mono</button>
+			<script type="text/javascript">
+			  document.getElementById("cssmono").onclick = function() {
+			    document.getElementById("stylesheet").href="monochrome.css"; 
+			    return false;
+		  	};
+			</script>
+      		<button type="button" id="cssdef">colr</button>
+			<script type="text/javascript">
+			  document.getElementById("cssdef").onclick = function() {
+			    document.getElementById("stylesheet").href="style.css"; 
+			    return false;
+		  	};
+			</script>
+		</div>
+
 
 			<h2>Gallery: Our Events</h2>
 			<figure>

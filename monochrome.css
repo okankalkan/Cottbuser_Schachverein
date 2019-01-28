@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 *, *::before, *::after {
@@ -10,10 +11,10 @@ img {
 }
 
 body {
-	margin: 0;
-  background-color: #36486c;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
 }
   
 .logo {
@@ -26,14 +27,14 @@ body {
   padding: 1em;
   margin: auto;
   max-width: 1024px;
-  background-color: #36486c;
+  background-color: #ffffff;
   background-blend-mode: multiply;
   background-size: cover;
   display: grid;
 }
 
 .content a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -45,7 +46,7 @@ body {
 /* navigation styles start here */
 
 header {
-  background-color: #36486c;
+  background-color: #ffffff;
   text-align: center;
   position: relative;
   z-index: 999;
@@ -99,7 +100,7 @@ nav {
   text-align: right;
   top: 100%;
   right: 0;
-  background-color: #36486c;
+  background-color: #ffffff;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -118,7 +119,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -217,7 +218,7 @@ footer {
 }
 
 .box {
-  color: #fff;
+  color: #000;
   border-radius: 0.3em;
   padding: 0.5em;
 }
@@ -233,7 +234,7 @@ footer {
 }
 
 .menu a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -296,11 +297,12 @@ footer {
   margin: auto;
   max-width: 1024px;
   text-align: right;
+  color: #000;
 }
 
 .breadcrumb {
-	text-decoration-line: overline;
-	text-decoration-style: double;
+  text-decoration-line: overline;
+  text-decoration-style: double;
 }
 
 .membername {
@@ -320,8 +322,8 @@ footer {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: #36486C;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
 }
 
  /*Add a hover effect if you want */
@@ -486,7 +488,7 @@ height: 100%;
 }
 /* Style the submit button with a specific background color etc */
 .buttons button {
-  background-color:  #222d44;
+  background-color: #000;
   color: white;
   /*padding: 12px 20px;*/
   border: none;
@@ -496,5 +498,5 @@ height: 100%;
 
 /* When moving the mouse over the submit button, add a darker green color */
 .buttons button:hover {
-  background-color:  #99aacc;
+  background-color:  #262626;
 }
