@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Chessclun</title>
+	<title>Cottbuser Schachfreunde e.V - Calendar</title>
 </head>
 <body  onload="loadXMLDoc()">
 <header>
@@ -54,7 +54,7 @@
 		  	};
 			</script>
 		</div>
-      <table id="calendar"></table>
+      <table id="calendar" vocab="http://schema.org/" typeof="Event"></table>
       <script>
         function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
@@ -72,13 +72,13 @@
             var table="<tr><th>TITLE</th><th>DESCRIPTION</th><th>DATE</th></tr>";
             var x = xmlDoc.getElementsByTagName("event");
             for (i = 0; i <x.length; i++) {
-                table += "<tr><td>" +
+                table += '<tr><td property="name">' +
                     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-                    "</td><td>" +
+                    '</td><td property="description">' +
                     x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
-                    "</td><td>" +
+                    '</td><td property="startDate">' +
                     x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue +
-                    "</td><td>";
+                    '</td>';
             }
             document.getElementById("calendar").innerHTML = table;
         }
