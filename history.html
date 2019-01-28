@@ -22,7 +22,7 @@
           <li><a href="aboutus.html" tabindex="5" accesskey="a 0">About us</a></li>
           <li><a href="news.html" tabindex="6" accesskey="n 0">News</a></li>
           <li><a href="joinus.html" tabindex="7" accesskey="j 0">Join us!</a></li>
-          <li><a href="statutes.html" tabindex="8" accesskey="s 0">Statues</a></li>
+          <li><a href="statutes.html" tabindex="8" accesskey="s 0">Statutes</a></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -40,7 +40,22 @@
 		<main class="box content">
 			<div class="breadcrumb">
          <a href="index.html">Home</a> -> <a href="aboutus.html">About us</a> -> <a href="history.html">History</a>
-      </div>
+      </div>      	<div class="buttons">
+      		<button type="button" id="cssmono">mono</button>
+			<script type="text/javascript">
+			  document.getElementById("cssmono").onclick = function() {
+			    document.getElementById("stylesheet").href="monochrome.css"; 
+			    return false;
+		  	};
+			</script>
+      		<button type="button" id="cssdef">colr</button>
+			<script type="text/javascript">
+			  document.getElementById("cssdef").onclick = function() {
+			    document.getElementById("stylesheet").href="style.css"; 
+			    return false;
+		  	};
+			</script>
+		</div>
 
 			<h2>About US - History</h2>
 			<p>The „Cottbuser Schachfreunde e.V.“ is a small chess club in Cottbus. This club is not profit-oriented and its main purposes are, to raise the enthusiasm for playing chess among young people, to organize events and travels for club members, to offer a location, where members can appreciate the chess game and challenge each other and also to pass the knowledge and passion to others.</p>

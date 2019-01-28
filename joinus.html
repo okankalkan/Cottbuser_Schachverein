@@ -21,7 +21,7 @@
           <li><a href="aboutus.html" tabindex="5" accesskey="a 0">About us</a></li>
           <li><a href="news.html" tabindex="6" accesskey="n 0">News</a></li>
           <li><a href="joinus.html" tabindex="7" accesskey="j 0">Join us!</a></li>
-          <li><a href="statutes.html" tabindex="8" accesskey="s 0">Statues</a></li>
+          <li><a href="statutes.html" tabindex="8" accesskey="s 0">Statutes</a></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
@@ -40,7 +40,22 @@
 			
       <div class="breadcrumb">
          <a href="index.html">Home</a> -> <a href="joinus.html">Join us</a> 
-      </div>
+      </div>      	<div class="buttons">
+      		<button type="button" id="cssmono">mono</button>
+			<script type="text/javascript">
+			  document.getElementById("cssmono").onclick = function() {
+			    document.getElementById("stylesheet").href="monochrome.css"; 
+			    return false;
+		  	};
+			</script>
+      		<button type="button" id="cssdef">colr</button>
+			<script type="text/javascript">
+			  document.getElementById("cssdef").onclick = function() {
+			    document.getElementById("stylesheet").href="style.css"; 
+			    return false;
+		  	};
+			</script>
+		</div>
 
 			<h2>Join Us!</h2>
 			<h3>Why you should join Cottbuser Schachfreunde</h3>
