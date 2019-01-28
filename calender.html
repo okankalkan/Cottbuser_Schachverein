@@ -8,7 +8,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Chessclun</title>
 </head>
-<body>
+<body  onload="loadXMLDoc()">
 <header>
   <object type="image/svg+xml" data="logo1.svg" class="logo">
   	<h1>logo</h1>
@@ -39,27 +39,35 @@
       <div class="breadcrumb">
          <a href="index.html">Home</a> -> <a href="calender.html">Calendar</a> 
       </div>
-
-	
-			<h3>Our Events</h3>
-			<table>
-   <tr>
-    <th>Beginners' Tournament</th>
-    <td>06.11.2018</td>
-    <td>Big match for all our new players</td>
-   </tr>
-   <tr>
-    <th>Christmas</th>
-    <td>25.12.2018</td>
-    <td>Happy Holidays!</td> 
-   </tr>
-   <tr>
-    <th>New Year</th>
-    <td>01.01.2019</td>
-    <td>Happy Holidays!</td>
-   </tr>
-  </table>
-
+      <table id="calendar"></table>
+      <script>
+        function loadXMLDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xmlhttp.open("GET", "calendar.xml", true);
+            xmlhttp.send();
+        }
+        function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table="<tr><th>TITLE</th><th>DESCRIPTION</th><th>DATE</th></tr>";
+            var x = xmlDoc.getElementsByTagName("event");
+            for (i = 0; i <x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue +
+                    "</td><td>";
+            }
+            document.getElementById("calendar").innerHTML = table;
+        }
+    </script>
 		</main>
 
 
